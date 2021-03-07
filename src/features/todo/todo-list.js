@@ -1,13 +1,18 @@
 import React from "react";
 import { usePaginate } from "../../services/hooks/usePaginate";
 import { todoListProps } from "./definitions";
+import { PaginationsWrapper } from "../../components/pagination/paginations";
+import { Todo } from "../../components/todo";
 
 export const TodoList = ({ todos }) => {
   const { paginate } = usePaginate(todos);
 
-  console.log(paginate);
-
-  return <h1>code</h1>;
+  return (
+    <PaginationsWrapper>
+      <Todo />
+      fjkfgkndnvkjdgvn
+    </PaginationsWrapper>
+  );
 };
 
 TodoList.propTypes = todoListProps;

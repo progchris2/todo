@@ -11,9 +11,9 @@ export const usePaginate = (todos) => {
     let table = [];
 
     todos.forEach((element, i) => {
-      table = [...items, element];
+      table = [...table, element];
       if ((i + 1) % 10 === 0) {
-        items = [...table, table.length > 10 ? table.slice(0, 10) : table];
+        items = [...items, table.length > 10 ? table.slice(0, 10) : table];
       }
     });
 
