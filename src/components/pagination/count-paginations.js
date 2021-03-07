@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Paginations = () => {
+export const CountPaginations = () => {
   return <div>1</div>;
 };
